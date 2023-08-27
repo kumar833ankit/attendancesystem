@@ -1,0 +1,100 @@
+/* App.css */
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevent page overflow */
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.login-container,
+.attendance-container {
+  border: 2px solid #333;
+  padding: 20px;
+  margin: auto; /* Center the container */
+  max-width: 80%; /* Limit maximum width for responsiveness */
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+input,
+select,
+button {
+  margin: 10px 0;
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+input[type="text"],
+select {
+  color: black;
+  background-color: white;
+  padding-left: 5px; /* Add some padding to the left of input/select */
+}
+
+.login-container {
+  text-align: center;
+}
+
+/* Additional styles for responsiveness */
+
+@media screen and (max-width: 768px) {
+  .login-container,
+  .attendance-container {
+    max-width: 90%; /* Adjust maximum width for smaller screens */
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .login-container,
+  .attendance-container {
+    max-width: 50%; /* Adjust maximum width for larger screens */
+  }
+}
+
+/* Your existing styles */
+
+.congrats-gif {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 2px solid #333;
+  padding: 20px;
+  max-width: 300px;
+  z-index: 999;
+}
